@@ -40,7 +40,7 @@ if os.path.exists(OAUTHS_LIST) and os.path.getsize(OAUTHS_LIST) > 0:
         new_oauths = f.readlines()
         OAUTHS.extend(new_oauths)
 else:
-    print(light_magenta + f"{OAUTHS_LIST} file not detected. Using {len(OAUTHS)} accounts provided by Horizons Edge as default")
+    print(light_magenta + f"{OAUTHS_LIST} file is empty or doesn't exist. Using {len(OAUTHS)} accounts provided by Horizons Edge as default")
 
 if os.path.exists(MESSAGES_LIST) and os.path.getsize(MESSAGES_LIST) > 0:
     with open(MESSAGES_LIST, "r") as f:
